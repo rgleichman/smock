@@ -4,13 +4,6 @@ module MockWrappers where
 import Apply
 import MockTags
 
---WrapDef
-newtype WrapDef a = WrapDef a deriving (Show)
-
-instance Wrap WrapDef where
-  unwrap (WrapDef a) = a
-  wrap = WrapDef
-
 -- WrapMath
 newtype WrapMath a = WrapMath a deriving (Show)
 
